@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookings - Car Rental Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">CR</div> <span class="label">Car Rental</span></div>
+      <div class="muted">Menu</div>
+      <ul class="nav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button id="menuToggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+          <strong>Bookings</strong>
+        </div>
+        <div class="right">
+          <input class="search" type="search" placeholder="Search bookings" />
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="panel">
+          <h2>All Bookings</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Booking ID</th>
+                  <th>Customer</th>
+                  <th>Car</th>
+                  <th>Pickup</th>
+                  <th>Return</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#BK-1042</td>
+                  <td>ravi</td>
+                  <td>Toyota Corolla</td>
+                  <td>2025-10-06</td>
+                  <td>2025-10-10</td>
+                  <td><span class="badge success">Approved</span></td>
+                  <td><button class="btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>#BK-1041</td>
+                  <td>krenil</td>
+                  <td>BMW 3 Series</td>
+                  <td>2025-10-05</td>
+                  <td>2025-10-08</td>
+                  <td><span class="badge warning">Pending</span></td>
+                  <td><button class="btn">Approve</button></td>
+                </tr>
+                <tr>
+                  <td>#BK-1040</td>
+                  <td>bhavin</td>
+                  <td>Ford Mustang</td>
+                  <td>2025-10-04</td>
+                  <td>2025-10-09</td>
+                  <td><span class="badge danger">Cancelled</span></td>
+                  <td><button class="btn ghost">Details</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="footer-space"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

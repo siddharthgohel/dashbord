@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payments - Car Rental Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">CR</div> <span class="label">Car Rental</span></div>
+      <div class="muted">Menu</div>
+      <ul class="nav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button id="menuToggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+          <strong>Payments</strong>
+        </div>
+        <div class="right">
+          <input class="search" type="search" placeholder="Search payments" />
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="grid cols-3">
+          <div class="card">
+            <h3>Total Revenue</h3>
+            <div class="value">$42,380</div>
+            <div class="delta">+12% MoM</div>
+          </div>
+          <div class="card">
+            <h3>Outstanding</h3>
+            <div class="value">$1,840</div>
+            <div class="delta" style="color:#fbbf24">-4% WoW</div>
+          </div>
+          <div class="card">
+            <h3>Refunds</h3>
+            <div class="value">$320</div>
+            <div class="delta" style="color:#f87171">+2% MoM</div>
+          </div>
+        </section>
+
+        <section class="panel" style="margin-top:16px;">
+          <h2>Recent Transactions</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Txn ID</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Method</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TX-88231</td>
+                  <td>ravi</td>
+                  <td>$180</td>
+                  <td>Card</td>
+                  <td>2025-10-06</td>
+                  <td><span class="badge success">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>TX-88212</td>
+                  <td>krenil</td>
+                  <td>$240</td>
+                  <td>Cash</td>
+                  <td>2025-10-05</td>
+                  <td><span class="badge warning">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>TX-88190</td>
+                  <td>bhavin</td>
+                  <td>$0</td>
+                  <td>Card</td>
+                  <td>2025-10-04</td>
+                  <td><span class="badge danger">Refunded</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="footer-space"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cars - Car Rental Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">CR</div> <span class="label">Car Rental</span></div>
+      <div class="muted">Menu</div>
+      <ul class="nav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button id="menuToggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+          <strong>Cars</strong>
+        </div>
+        <div class="right">
+          <input id="carSearch" class="search" type="search" placeholder="Search cars" />
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="panel">
+          <h2>Fleet</h2>
+          <div class="table-wrap">
+            <table class="table" id="carsTable">
+              <thead>
+                <tr>
+                  <th>Car</th>
+                  <th>Type</th>
+                  <th>Reg. No.</th>
+                  <th>Rate/Day</th>
+                  <th>Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Toyota Corolla</td>
+                  <td>Economy</td>
+                  <td>ABC-2345</td>
+                  <td>$45</td>
+                  <td><span class="badge success">Available</span></td>
+                </tr>
+                <tr>
+                  <td>Honda Civic</td>
+                  <td>Compact</td>
+                  <td>HND-7788</td>
+                  <td>$52</td>
+                  <td><span class="badge warning">Booked</span></td>
+                </tr>
+                <tr>
+                  <td>BMW 3 Series</td>
+                  <td>Luxury</td>
+                  <td>BMW-9901</td>
+                  <td>$120</td>
+                  <td><span class="badge success">Available</span></td>
+                </tr>
+                <tr>
+                  <td>Ford Mustang</td>
+                  <td>Sports</td>
+                  <td>FRD-5521</td>
+                  <td>$160</td>
+                  <td><span class="badge warning">Booked</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="footer-space"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

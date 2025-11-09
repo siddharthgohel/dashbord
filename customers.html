@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customers - Car Rental Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">CR</div> <span class="label">Car Rental</span></div>
+      <div class="muted">Menu</div>
+      <ul class="nav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button id="menuToggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+          <strong>Customers</strong>
+        </div>
+        <div class="right">
+          <input class="search" type="search" placeholder="Search customers" />
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="panel">
+          <h2>Customer Directory</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Total Bookings</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>harsh jain</td>
+                  <td>harshjain@example.com</td>
+                  <td>+1 212 555 0168</td>
+                  <td>3</td>
+                  <td><button class="btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>siddharth gohel</td>
+                  <td>siddharthgohel@example.com</td>
+                  <td>+1 415 555 0147</td>
+                  <td>5</td>
+                  <td><button class="btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>aditya solanki</td>
+                  <td>adityasolanki@example.com</td>
+                  <td>+1 646 555 0132</td>
+                  <td>2</td>
+                  <td><button class="btn ghost">Message</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="footer-space"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

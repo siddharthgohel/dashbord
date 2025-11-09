@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings - Car Rental Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">CR</div> <span class="label">Car Rental</span></div>
+      <div class="muted">Menu</div>
+      <ul class="nav">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="left">
+          <button id="menuToggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+          <strong>Settings</strong>
+        </div>
+        <div class="right">
+          <button class="icon-btn">Save</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <form id="settingsForm" class="panel">
+          <h2>Profile</h2>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="label" for="name">Name</label>
+              <input id="name" type="text" placeholder="Admin" />
+            </div>
+            <div class="form-group">
+              <label class="label" for="email">Email</label>
+              <input id="email" type="email" placeholder="admin@example.com" />
+            </div>
+            <div class="form-group">
+              <label class="label" for="password">Password</label>
+              <input id="password" type="password" placeholder="••••••••" />
+            </div>
+            <div class="form-group">
+              <label class="label" for="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="+1 555 0123" />
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:12px;">
+            <button class="btn" type="submit">Save Changes</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <section class="panel" style="margin-top:16px;">
+          <h2>Preferences</h2>
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="label" for="currency">Currency</label>
+              <select id="currency">
+                <option>USD</option>
+                <option>EUR</option>
+                <option>GBP</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label" for="timezone">Timezone</label>
+              <select id="timezone">
+                <option>UTC-8</option>
+                <option>UTC-5</option>
+                <option>UTC+1</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label" for="notif">Notifications</label>
+              <select id="notif">
+                <option>All</option>
+                <option>Important only</option>
+                <option>None</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <div class="footer-space"></div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
